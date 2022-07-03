@@ -1,23 +1,25 @@
 import './App.scss';
+import Header from './components/Header.js';
+import Nav from './components/Nav.js';
+import Main from './components/Main.js';
+import Aside from './components/Aside.js';
+import Footer from './components/Footer.js';
 
 function App() {
   return (
     <div className="page-wrap">
   <header className="page-header">
-    Header
+    <Header />
+    <Nav />
   </header>
-  <nav className="page-nav">
-    Nav
-  </nav>
   <main className="page-main">
-    <article>
-    </article>
+    <Main />
   </main>
   <aside className="page-sidebar">
-    Aside
+    <Aside />
   </aside>
   <footer className="page-footer">
-    Footer
+    <Footer />
   </footer>
 </div>
   );
